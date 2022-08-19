@@ -81,8 +81,8 @@ const DIVHeader = styled.div`
     }
     div:nth-child(4) div p{
         /* background: black; */
-        margin-top: -80px;
-        margin-left: -20px;
+        margin-top: -50px;
+        margin-left: -60px;
 
         text-align: left;
         color: white;
@@ -90,7 +90,7 @@ const DIVHeader = styled.div`
         font-weight: 700;
         letter-spacing: .1em;
         line-height: 1.2em;
-        text-shadow: -2px 5px 5px #558ABB;
+        text-shadow: -2px 5px 5px #141414;
         
     }
     /* Coments
