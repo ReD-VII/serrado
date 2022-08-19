@@ -59,12 +59,11 @@ const DIVHeader = styled.div`
     div:nth-child(4){
 
         position: absolute;
-        
         width: 100%;
         height: 350px;
         overflow: hidden;
-        border-bottom-left-radius: 40px;
-        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
     }
     div:nth-child(4) img{
         width: 100%;
