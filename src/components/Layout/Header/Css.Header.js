@@ -61,7 +61,7 @@ const DIVHeader = styled.div`
         position: absolute;
         
         width: 100%;
-        height: 488px;
+        height: 350px;
         overflow: hidden;
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
