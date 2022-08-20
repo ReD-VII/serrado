@@ -20,32 +20,39 @@ import logo from './img/logo.png'
 
 export default function Header(){
     return(
-        <DIVHeader>
-            {/* Bloco 1 */}
-            <div style={{zIndex: '100'}}>
-
-                <img src={logo} alt="Charme do Serrado Flats" />
-
+        <DIVHeader imgUrl={imgBackground}>
+            
+            {/* Logo */}
+            <div className="blocos_header">
+                <img src={logo} alt="Charme do serrado" />
             </div>
 
-            {/* Bloco 2 */}
-            <div></div>
 
-            {/* Bloco 3 */}
-            <div style={{zIndex: '100'}}>
+
+            <div className="blocos_header"></div>
+
+
+            {/* Menu */}
+            <div className="blocos_header">
                 <div>
-                    <BiMenuAltRight size={28} color={"white"}/>
+                    <BiMenuAltRight size={30} color={"white"} className="icon_menu"/>
                 </div>
             </div>
 
-            {/* Background */}
-            <div style={{zIndex: '1'}}>
-                <div style={{zIndex: '3'}}>
-                    <p>VENHA<br/>CONHECER<br/>NOSSOS FLATS!</p>
 
+
+            {/* Conteudo Inferior */}
+            <div className="blocos_header">
+
+                <p>
+                    O Melhor do serrado brasileiro!
+                </p>
+
+                <div>
+                    
                 </div>
-                <img src={imgBackground} alt="Background" style={{zIndex: '2'}}/>
             </div>
+            
         </DIVHeader>
     ) 
 }

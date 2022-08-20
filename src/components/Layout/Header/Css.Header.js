@@ -1,97 +1,130 @@
 import styled from "styled-components";
-
+import imgBackground from './img/background.png'
 
 
 const DIVHeader = styled.div`
     display: flex;
     flex-direction: row;
-    width: 100vw !important;
-    height: 70px;
+    width: 100vw;
+    height: 488px;
     margin: 0;
-    background: black;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
+    background: url(${(props)=>props.imgUrl}) no-repeat; 
+    background-size: 100%;
+    flex-wrap: wrap;
+    /* background: rgba(255, 0, 0, 0.233); */
 
-    div{
-        height: 100%;
+
+
+
+    /* Blocos Header */
+    .blocos_header{
+        position: relative;
+        height: 100px;
     }
 
 
-    div:nth-child(1){
+
+    .blocos_header:nth-child(1){
+        width: 30%;
+        /* background: purple; */
+    }
+    .blocos_header:nth-child(1) img{
+        width: 120%;
+        /* background: purple; */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .blocos_header:nth-child(2){
         width: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    div:nth-child(1) img{
-        width: 150%;
-        margin-top: 5px;
         /* background: red; */
     }
 
 
-    div:nth-child(2){
-        width: 40%;
-        background: violet;
-    }
 
 
-    div:nth-child(3){
+
+
+
+
+
+
+    .blocos_header:nth-child(3){
         display: flex;
         justify-content: center;
         align-items: center;
         width: 30%;
-        /* background: red; */
+        /* background: white; */
     }
-    div:nth-child(3) div{
+    .blocos_header:nth-child(3) div{
         display: flex;
-        /* justify-content: center; */
+        justify-content: center;
         align-items: center;
-        width: 35px;
-        height: 35px;
-        margin: auto;
-        margin-right: 10    px;
-        border-radius: 20px;
+        width: 45px;
+        height: 45px;
+        margin-right: -20px;
+        border-radius: 30px;
+        background: rgba(31, 0, 0, 0.322);
+    }
+    .blocos_header:nth-child(3) .icon_menu{
 
-        background: rgba(0, 0, 0, 0.473);
     }
 
 
-    div:nth-child(4){
 
-        position: absolute;
+
+
+
+
+
+
+    /* CONTEUDO INFERIOR */
+    .blocos_header:nth-child(4){
         width: 100%;
-        height: 350px;
-        overflow: hidden;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
+        height: calc(100% - 100px);
     }
-    div:nth-child(4) img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top;
-    }
-    div:nth-child(4) div{
-        position: absolute;
-        width: 100%;
-        height: 488px;
-        /* background: rgba(255, 0, 0, 0.301); */
-        
-    }
-    div:nth-child(4) div p{
-        /* background: black; */
-        margin-top: -50px;
-        margin-left: -60px;
-
+    .blocos_header:nth-child(4) p{
+        width: 60%;
+        margin-top: 90px;
+        margin-left: 5%;
+        /* background: paleturquoise; */
+        font-size: 2.6rem;
+        font-weight: 700;
         text-align: left;
         color: white;
-        font-size: 2em;
-        font-weight: 700;
-        letter-spacing: .1em;
-        line-height: 1.2em;
-        text-shadow: -2px 5px 5px #141414;
-        
+        text-shadow: -0px 4px 3px rgba(31, 0, 0, 0.637);
+        text-transform: uppercase;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* Coments
         &:nth-child(2) */
 `
