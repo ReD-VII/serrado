@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import imgBackground from './img/background.png'
 
 
 const DIVHeader = styled.div`
