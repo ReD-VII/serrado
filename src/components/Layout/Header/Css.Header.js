@@ -11,8 +11,9 @@ const DIVHeader = styled.div`
     border-bottom-right-radius: 25px;
     overflow: hidden;
     background: url(${(props)=>props.imgUrl}) no-repeat; 
-    background-size: 100%;
+    background-size: 100% 100%;
     flex-wrap: wrap;
+    box-shadow: 0px 0px 8px 4px rgba(22, 22, 22, 0.651);
     /* background: rgba(255, 0, 0, 0.233); */
 
 
@@ -31,7 +32,9 @@ const DIVHeader = styled.div`
         /* background: purple; */
     }
     .blocos_header:nth-child(1) img{
-        width: 120%;
+        width: 180%;
+        margin-top: -30px;
+        margin-left: -30px;
         /* background: purple; */
     }
 

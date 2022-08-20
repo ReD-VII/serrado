@@ -48,9 +48,6 @@ export default function Header(){
                     O Melhor do serrado brasileiro!
                 </p>
 
-                <div>
-                    
-                </div>
             </div>
             
         </DIVHeader>
